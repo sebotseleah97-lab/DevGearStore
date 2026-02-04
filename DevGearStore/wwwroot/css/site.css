@@ -1,48 +1,24 @@
-body {
-    margin: 0;
-    font-family: Arial;
-    background: #f5f0ff;
+.auto-slider {
+    width: 900px;
+    overflow: hidden;
+    margin: 30px auto;
 }
 
-.navbar {
-    background: #6a0dad;
-    padding: 15px;
-    color: white;
-    text-align: center;
-}
-
-    .navbar a {
-        color: white;
-        margin: 0 15px;
-        text-decoration: none;
-        font-weight: bold;
-    }
-
-.container {
-    padding: 20px;
+.slider-track {
+    display: flex;
+    gap: 20px;
 }
 
 .product {
+    min-width: 280px;
     background: white;
     padding: 15px;
-    margin: 15px auto;
     border-radius: 10px;
-    width: 300px;
     text-align: center;
 }
 
     .product img {
         width: 250px;
-        height: 160px;
+        height: 150px;
         border-radius: 10px;
     }
-
-.btn {
-    background: #6a0dad;
-    color: white;
-    padding: 8px 15px;
-    border-radius: 5px;
-    text-decoration: none;
-    display: inline-block;
-    margin-top: 10px;
-}

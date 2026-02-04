@@ -1,15 +1,21 @@
 ﻿@page
 @model ProductsModel
 
-<h2>Our Products</h2>
+<h2>Our Devices</h2>
 
-@foreach (var product in Model.Products)
-{
-    <div class="product">
-        <img src="@product.Image" />
-        <h3>@product.Name</h3>
-        <p>Category: @product.Category</p>
-        <p>Price: R @product.Price</p>
-        <a class="btn" href="#">Buy Now</a>
+<div class="auto-slider">
+    <div class="slider-track" id="productSlider">
+        @foreach (var product in Model.Products)
+        {
+            <div class="product">
+                <img src="@product.Image" />
+                <h3>@product.Name</h3>
+                <p>@product.Category</p>
+                <p>R @product.Price</p>
+                <a class="btn" href="#">Buy Now</a>
+            </div>
+        }
     </div>
-}
+</div>
+
+<script src="~/js/autoSlider.js"></script>
