@@ -1,0 +1,15 @@
+﻿@page
+@model ProductsModel
+
+<h2>Our Products</h2>
+
+@foreach (var product in Model.Products)
+{
+    <div class="product">
+        <img src="@product.Image" />
+        <h3>@product.Name</h3>
+        <p>Category: @product.Category</p>
+        <p>Price: R @product.Price</p>
+        <a class="btn" href="#">Buy Now</a>
+    </div>
+}
